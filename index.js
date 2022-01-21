@@ -3,9 +3,9 @@ const { messages } = require('powercord/webpack');
 const { inject, uninject } = require("powercord/injector");
 const { channels } = require("powercord/webpack");
 const chandlers = { // trol
-  911357751547023391: "i",
-  929774476713938964: "a",
-  897538868230889483: "\\:thonk\\:"
+  "911357751547023391": "i",
+  "929774476713938964": "a",
+  "897538868230889483": "\\:thonk\\:"
 }
 
 // trol
