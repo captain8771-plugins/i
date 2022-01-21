@@ -2,18 +2,24 @@ const { Plugin } = require("powercord/entities");
 const { messages } = require('powercord/webpack');
 const { inject, uninject } = require("powercord/injector");
 const { channels } = require("powercord/webpack");
+const chandlers = { // trol
+  911357751547023391: "i",
+  929774476713938964: "a",
+  897538868230889483: "\\:thonk\\:"
+}
 
 // trol
 const convert_msg_to_chandler_msg_wow_this_function_name_is_ridiculous = (msg, chandler_id) => {
+  msg = msg.toString()
   switch (chandler_id.toString()) {
     case "911357751547023391": {
-      return `I forgot to add an I, but ${msg}`
+      return !msg.toLowercase().startsWith(chandlers[chandler_id.toString()]) ?  `I forgot to add an I, but ${msg}` : msg
     }
     case "929774476713938964": {
-      return `am stupid and forgot the 'a' at the start of the message, anyways ${msg}`
+      return !msg.toLowercase().startsWith(chandlers[chandler_id.toString()]) ?  `am stupid and forgot the 'a' at the start of the message, anyways ${msg}` : msg
     }
     case "897538868230889483": {
-      return `\\:thonk\\: i forgot to add the \\:thonk\\:, anyways ${msg}`
+      return !msg.toLowercase().startsWith(chandlers[chandler_id.toString()]) ? `\\:thonk\\: i forgot to add the \\:thonk\\:, anyways ${msg}` : msg
     }
     default: {
       return msg
