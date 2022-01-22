@@ -5,7 +5,8 @@ const { channels } = require("powercord/webpack");
 const chandlers = { // trol
   "911357751547023391": "i",
   "929774476713938964": "a",
-  "897538868230889483": "\\:thonk\\:"
+  "897538868230889483": "\\:thonk\\:",
+  "934547364797120614": "h"
 }
 
 // trol
@@ -20,6 +21,9 @@ const convert_msg_to_chandler_msg_wow_this_function_name_is_ridiculous = (msg, c
     }
     case "897538868230889483": {
       return !msg.toLowerCase().startsWith(chandlers[chandler_id.toString()]) ? `\\:thonk\\: i forgot to add the \\:thonk\\:, anyways ${msg}` : msg
+    }
+    case "934547364797120614": {
+      return !msg.toLowerCase().startsWith(chandlers[chandler_id.toString()]) ? `hello i forgot the 'h', anyways ${msg}` : msg
     }
     default: {
       return msg
