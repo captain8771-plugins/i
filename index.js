@@ -19,7 +19,7 @@ const convert_msg_to_chandler_msg_wow_this_function_name_is_ridiculous = (msg, c
       return !msg.toLowerCase().startsWith(chandlers[chandler_id.toString()]) ?  `I forgot to add an I, but ${msg}` : msg
     }
     case "929774476713938964": {
-      return !msg.toLowerCase().startsWith(chandlers[chandler_id.toString()]) ?  `am stupid and forgot the 'a' at the start of the message, anyways ${msg}` : msg
+      return !msg.toLowerCase().startsWith(chandlers[chandler_id.toString()]) ?  `accidentally forgot to start my message with an "a", but anyways ${msg}` : msg
     }
     case "897538868230889483": {
       return !msg.toLowerCase().startsWith(chandlers[chandler_id.toString()]) ? `\\:thonk\\: i forgot to add the \\:thonk\\:, anyways ${msg}` : msg
