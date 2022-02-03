@@ -8,7 +8,8 @@ const chandlers = { // trol
   "897538868230889483": "\\:thonk\\:",
   "934547364797120614": "h",
   "934903182797176882": "b",
-  "935759398310129684": "e"
+  "935759398310129684": "e",
+  "938515745325850674": "s"
 }
 
 // trol
@@ -32,6 +33,9 @@ const convert_msg_to_chandler_msg_wow_this_function_name_is_ridiculous = (msg, c
     }
     case "935759398310129684": {
       return !msg.toLowerCase().startsWith(chandlers[chandler_id.toString()]) ? `electro pog, anyways ${msg}` : msg
+    }
+    case "938515745325850674": {
+      return !msg.toLowerCase().startsWith(chandlers[chandler_id.toString()]) ? `sucks to be me because i forgot the 's', anyways ${msg}` : msg
     }
     default: {
       return msg
