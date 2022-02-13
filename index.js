@@ -9,7 +9,8 @@ const chandlers = { // trol
   "934547364797120614": "h",
   "934903182797176882": "b",
   "935759398310129684": "e",
-  "938515745325850674": "s"
+  "938515745325850674": "s",
+  "942503083886411827": "r"
 }
 
 // trol
@@ -36,6 +37,9 @@ const convert_msg_to_chandler_msg_wow_this_function_name_is_ridiculous = (msg, c
     }
     case "938515745325850674": {
       return !msg.toLowerCase().startsWith(chandlers[chandler_id.toString()]) ? `sucks to be me because i forgot the 's', anyways ${msg}` : msg
+    }
+    case "942503083886411827": {
+      return !msg.toLowerCase().startsWith(chandlers[chandler_id.toString()]) ? `r/therewasanattempttosendamessagethatdidnotstartwithr, anyways ${msg}` : msg
     }
     default: {
       return msg
